@@ -1,6 +1,9 @@
+// Estilos
+import './CreateTodoButton.css';
+
 const CreateTodoButton = () => {
   return (
-    <button>+</button>
+    <button className="CreateTodoButton">+</button>
   )
 }
 
