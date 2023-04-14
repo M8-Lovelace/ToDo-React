@@ -25,6 +25,10 @@ const TodoForm = () => {
   // Código para enviar la información
   const onSubmit = (event) => {
     event.preventDefault();
+    if (newTodo.length <= 0) {
+      alert("El nombre está vacío, escribe algo");
+      return;
+    }
     saveTodo(newTodo);
     setOpenModal(false);
   };
